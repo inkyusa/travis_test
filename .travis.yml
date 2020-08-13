@@ -1,3 +1,11 @@
 language: cpp
-compiler: g++
-
+compiler: gcc
+os:
+  - linux
+dist: bionic
+script:
+  - mkdir build
+  - cd build
+  - cmake ../
+  - make
+  - ./simple_example
