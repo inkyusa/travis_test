@@ -19,7 +19,7 @@ fail() {
 
 t program should run
 ./example >/dev/null 2>&1 && pass || fail
-t program should print Hello
+t program should print The max value is 9
 cmp <(./example) <(echo The max value is 9) && pass || fail
 
 echo ALL TESTS PASSED
